@@ -4,5 +4,5 @@
 #   rican.gc.ca => French
 #   ircan.a.really.deep.subdomain.gc.ca => English
 #   rican.even-in-a-different-top-level-domain.com => French
-ircan: :en
-rican: :fr
+www.mobilityottawaoutaouais.com: :en
+www.mobiliteoutaouaisottawa.com: :fr
