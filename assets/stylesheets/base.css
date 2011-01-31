@@ -245,7 +245,7 @@ div.navaid, p.navaid, h1.navaid, h2.navaid, .navaid {
 	top: -100px;
 }
 div.navaid a, p.navaid a, h1.navaid a, h2.navaid a, .navaid a {
-	color: #FFFFFF;
+	color: #99ccff;
 }
 div.page div.core div.navaid {
 	font-size: 100%;
@@ -389,7 +389,11 @@ ul.nav li, ul.nav2 li {
 	margin: 0px;
 	background-color: #FFF; /**** added background color to display over div.left and div.right background color - NI  ****/
 }
+div.center {
+	border-left: 1px solid #000;
+}
 h2.nav, div.left div.h2nav, div.left p.h2nav {
+        color: #18ACD1;
 	font-size: 10.0pt;
 	font-weight: 700;
 	line-height: 1.6em;
@@ -568,7 +572,7 @@ abbr, acronym, span.abbr {
 	cursor: help;
 }
 blockquote {
-	background-color: #CC9;
+	background-color: #fff;
 	color: #000;
 	border: 1px solid #000;
 	font-style: italic;
