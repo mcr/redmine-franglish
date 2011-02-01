@@ -8,7 +8,7 @@ class Clf2::Patches::SettingPatchTest < ActionController::TestCase
   
   setup do
     Setting.welcome_text = ''
-    Setting.plugin_redmine_clf2 = {'welcome_text_fr' => ''}
+    Setting.plugin_redmine_franglish = {'welcome_text_fr' => ''}
   end
 
   context "#english_welcome_text?" do
@@ -33,19 +33,19 @@ class Clf2::Patches::SettingPatchTest < ActionController::TestCase
 
   context "#french_welcome_text?" do
     should "be true if the French welcome_text is set" do
-      with_settings :plugin_redmine_clf2 => {'welcome_text_fr' => 'French welcome_text'} do
+      with_settings :plugin_redmine_franglish => {'welcome_text_fr' => 'French welcome_text'} do
         assert Setting.french_welcome_text?
       end
     end
 
     should "be false if the French welcome_text is empty" do
-      with_settings :plugin_redmine_clf2 => {'welcome_text_fr' => ''} do
+      with_settings :plugin_redmine_franglish => {'welcome_text_fr' => ''} do
         assert !Setting.french_welcome_text?
       end
     end
 
     should "be false if the French welcome_text is nil" do
-      with_settings :plugin_redmine_clf2 => {'welcome_text_fr' => nil} do
+      with_settings :plugin_redmine_franglish => {'welcome_text_fr' => nil} do
         assert !Setting.french_welcome_text?
       end
     end
@@ -55,7 +55,7 @@ class Clf2::Patches::SettingPatchTest < ActionController::TestCase
     setup do
       set_language_if_valid(:en)
       Setting.welcome_text = ENGLISH_TEXT
-      Setting.plugin_redmine_clf2 = {'welcome_text_fr' => FRENCH_TEXT}
+      Setting.plugin_redmine_franglish = {'welcome_text_fr' => FRENCH_TEXT}
     end
 
     context "default" do
@@ -77,7 +77,7 @@ class Clf2::Patches::SettingPatchTest < ActionController::TestCase
 
         should "show nothing if there is no French welcome_text" do
           set_language_if_valid(:en)
-          Setting.plugin_redmine_clf2 = {'welcome_text_fr' => nil}
+          Setting.plugin_redmine_franglish = {'welcome_text_fr' => nil}
 
           assert_equal '', Setting.welcome_text
         end
@@ -99,7 +99,7 @@ class Clf2::Patches::SettingPatchTest < ActionController::TestCase
 
       context "with an empty French welcome_text" do
         setup do
-          Setting.plugin_redmine_clf2 = {'welcome_text_fr' => nil}
+          Setting.plugin_redmine_franglish = {'welcome_text_fr' => nil}
         end
 
 
