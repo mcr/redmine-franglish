@@ -2,6 +2,10 @@ en:
   clf2_text_top_menu: Site Menu
   clf2_text_main_menu: Project Menu
   clf2_text_read_more: Read More
+  franglish_text_top_menu: Site Menu
+  franglish_text_main_menu: Project Menu
+  franglish_text_read_more: Read More
+  label_franglish_redmine: MOOSE Redmine
   label_clf_redmine: IRCan Redmine
   label_app_title: Extranet Environment
 #  label_help: Redmine Help

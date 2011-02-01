@@ -2,6 +2,10 @@ fr:
   clf2_text_top_menu: Menu du site
   clf2_text_main_menu: Menu du projet
   clf2_text_read_more: Lire la suite
+  franglish_text_top_menu: Menu du site
+  franglish_text_main_menu: Menu du projet
+  franglish_text_read_more: Lire la suite
+  label_franglish_redmine: MOOSE Redmine
   label_clf_redmine: RICan Redmine
   label_app_title: Environnement extranet
   label_overview: Vue d'ensemble
