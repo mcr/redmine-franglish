@@ -20,7 +20,7 @@ module Clf2
 
           base.load_clf2_subdomains_file
           
-          helper :clf2
+          helper :franglish
 
           # Include the current language in the url as a query string (ISO 639-2)
           def url_for_with_language_in_url(options)
