@@ -12,11 +12,11 @@
 					<li class="menucontent"><a class="menulink" title="Connecter &lt; Ressources Intellectuelles Canada" href="/login">Connecter</a></li>
 				</ul></li>
                     <% end %>
-        <%= render_clf_menu :top_menu -%>
+        <%= render_franglish_menu :top_menu -%>
         <% if User.current.logged? %>
 	<li class="menucontent"><a class="menulink" title="D&eacute;connecter &lt; Ressources Intellectuelles Canada" href="/logout">D&eacute;connecter</a></li>
         <% end %>
-        <%= render_clf_main_menu(@project) %>
+        <%= render_franglish_main_menu(@project) %>
             <% if controller.class == WelcomeController %>
 			<li>
 				<div class="prodis"></div>
