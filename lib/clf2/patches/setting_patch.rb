@@ -17,7 +17,7 @@ module Clf2
             def welcome_text
               if current_language == :fr
                 if self.french_welcome_text?
-                  Setting.plugin_redmine_clf2['welcome_text_fr']
+                  Setting.plugin_redmine_franglish['welcome_text_fr']
                 elsif self.english_welcome_text?
                   english_welcome_text
                 else
@@ -27,7 +27,7 @@ module Clf2
                 if self.english_welcome_text?
                   english_welcome_text
                 elsif self.french_welcome_text?
-                  Setting.plugin_redmine_clf2['welcome_text_fr']
+                  Setting.plugin_redmine_franglish['welcome_text_fr']
                 else
                   ''
                 end
@@ -44,7 +44,7 @@ module Clf2
         end
 
         def french_welcome_text?
-          Setting.plugin_redmine_clf2 && Setting.plugin_redmine_clf2['welcome_text_fr'].present?
+          Setting.plugin_redmine_franglish && Setting.plugin_redmine_franglish['welcome_text_fr'].present?
         end
 
         def current_language_welcome_text_present?
