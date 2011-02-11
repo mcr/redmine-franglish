@@ -29,7 +29,7 @@ fr:
   permission_view_documents: Visionnement du Bureau de référence
   project_module_documents: Bureau de référence
   label_document: Bureau de référence
-  label_document_new: Nouveau Document de référence
+  label_document_new: Nouveau groupe de documents
   label_document_plural: Bureau de référence
   label_document_added: Document sauvegardé
   enumeration_doc_categories: Catégorie du Bureau de référence
@@ -46,3 +46,7 @@ fr:
   label_issue_new: Nouvelle tâche
   label_issue_plural: Tâches
   label_issue_tracking: Suivi
+  # Missing in plugin 'timesheet_plugin'
+  label_log_time: Entrée de temps
+  field_deliverable: Livrable
+  field_overtime: Temps supplémentaire
